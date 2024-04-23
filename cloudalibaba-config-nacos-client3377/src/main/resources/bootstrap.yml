@@ -1,0 +1,16 @@
+# nacos\u914D\u7F6E
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos\u670D\u52A1\u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+      config:
+        server-addr: localhost:8848 #Nacos\u4F5C\u4E3A\u914D\u7F6E\u4E2D\u5FC3\u5730\u5740
+        file-extension: yaml #\u6307\u5B9Ayaml\u683C\u5F0F\u7684\u914D\u7F6E
+        group: PROD_GROUP
+        namespace: Prod_Namespace
+# nacos\u7AEF\u914D\u7F6E\u6587\u4EF6DataId\u7684\u547D\u540D\u89C4\u5219\u662F\uFF1A
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# \u672C\u6848\u4F8B\u7684DataID\u662F:nacos-config-client-dev.yaml
