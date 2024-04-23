@@ -43,4 +43,10 @@ public class FlowLimitController {
         return "------testE";
     }
 
+    @GetMapping("/testF")
+    public String testF() {
+        flowLimitService.common();
+        return "------testF";
+    }
+
 }
