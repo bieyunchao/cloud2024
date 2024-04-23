@@ -25,34 +25,5 @@ public class FlowLimitController {
     @Resource
     private FlowLimitService flowLimitService;
 
-    @GetMapping("/testC")
-    public String testC() {
-        flowLimitService.common();
-        return "------testC";
-    }
-
-    @GetMapping("/testD")
-    public String testD() {
-        flowLimitService.common();
-        return "------testD";
-    }
-
-    @GetMapping("/testE")
-    public String testE() {
-        flowLimitService.common();
-        return "------testE";
-    }
-
-    @GetMapping("/testF")
-    public String testF() {
-        flowLimitService.common();
-        return "------testF";
-    }
-
-    @GetMapping("/testG")
-    public String testG() {
-        flowLimitService.common();
-        return "------testG";
-    }
 
 }
